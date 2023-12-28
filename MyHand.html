@@ -121,7 +121,9 @@
         var kingClubs = document.getElementById("KC").checked;
         var kingHeart = document.getElementById("KH").checked;
 
-        document.getElementById("text").innerHTML = fourSpades;
+        const isItInTheHand= [aceSpades,twoSpades,threeSpades,fourSpades];
+
+        document.getElementById("text").innerHTML = isItInTheHand;
         
       }
       function findImportance() {
