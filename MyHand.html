@@ -7,9 +7,9 @@
     </button>
   </a>
   <body>
-    <form action="https://andrewallanbrain.github.io/MyHand.py" method="post">
-      <input type="Checkbox" name=RQueen></input>
-      <input type="submit" value="Submit">
-    </form>
+    <form action="{{ url_for("get_freq") }}" method="post">
+<label for="set_freq">Set Frequency:</label>
+<input type="number" id="set_freq" name="set_freq" >
+<button type="submit">submit</button>
   </body>
 </html>
