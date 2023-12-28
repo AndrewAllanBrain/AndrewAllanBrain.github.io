@@ -36,8 +36,8 @@
        <input type="Checkbox" name="AC">ACE OF CLUBS</input>
        <input type="Checkbox" name="2C">2 OF CLUBS</input>
        <input type="Checkbox" name="3C">3 OF CLUBS</input>
-       <input type="Checkbox" name="4C">4 OF CLUBS</input>
-       <input type="Checkbox" name="5C">5 OF CLUBS</input>
+       <input type="Checkbox" id="4C" oninput="display()">4 OF CLUBS</input>
+       <input type="Checkbox" id="5C">5 OF CLUBS</input>
        <input type="Checkbox" name="6C">6 OF CLUBS</input>
        <input type="Checkbox" name="7C">7 OF CLUBS</input>
        <input type="Checkbox" name="8C">8 OF CLUBS</input>
@@ -61,7 +61,7 @@
        <input type="Checkbox" name="KH">KING OF HEARTS</input>
        <input type="Checkbox" name="J1">JOKER</input>
        <input type="Checkbox" name="J2">JOKER</input>
-    <p1 name="test">bob</p1>
+    <p1 id="test"></p1>
        <script>
          function display() {
            var p = document.getElementById("4C").value;
