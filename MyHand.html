@@ -120,15 +120,15 @@
         var kingDiamonds = document.getElementById("KD").checked;
         var kingClubs = document.getElementById("KC").checked;
         var kingHearts = document.getElementById("KH").checked;
-
+    
         const isItInTheHand= [aceSpades,twoSpades,threeSpades,fourSpades,fiveSpades,sixSpades,sevenSpades,eightSpades,nineSpades,tenSpades,jackSpades,queenSpades,kingSpades,aceDiamonds,twoDiamonds,threeDiamonds,fourDiamonds,fiveDiamonds,sixDiamonds,sevenDiamonds,eightDiamonds,nineDiamonds,tenDiamonds,jackDiamonds,queenDiamonds,kingDiamonds,aceClubs,twoClubs,threeClubs,fourClubs,fiveClubs,sixClubs,sevenClubs,eightClubs,nineClubs,tenClubs,jackClubs,queenClubs,kingClubs,aceHearts,twoHearts,threeHearts,fourHearts,fiveHearts,sixHearts,sevenHearts,eightHearts,nineHearts,tenHearts,jackHearts,queenHearts,kingHearts];
 
+        findImportance(isItInTheHand);
+        
+      }
+      function findImportance(isItInTheHand) {
         document.getElementById("text").innerHTML = isItInTheHand;
-        
-      }
-      function findImportance() {
-        
-      }
+              }
 </script>
   </body>
 </html>
