@@ -6,7 +6,7 @@
 
 import cgi
 form = cgi.FieldStorage()
-searchterm = form.getvalue('searchbox')
+searchterm = form.getvalue('RQueen')
 
 
 # In[2]:
