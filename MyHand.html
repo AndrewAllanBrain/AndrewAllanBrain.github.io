@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html style="background-color: #46999a">
-  <title>MyHand</title>
+  <title>Ding Ding Ding</title>
   <a href="AndrewAllanBrain.github.io">
     <button>
       <img src="End Page.png" height="10" width="10"></img>
@@ -125,12 +125,18 @@
     
         const isItInTheHand= [aceSpades,twoSpades,threeSpades,fourSpades,fiveSpades,sixSpades,sevenSpades,eightSpades,nineSpades,tenSpades,jackSpades,queenSpades,kingSpades,aceDiamonds,twoDiamonds,threeDiamonds,fourDiamonds,fiveDiamonds,sixDiamonds,sevenDiamonds,eightDiamonds,nineDiamonds,tenDiamonds,jackDiamonds,queenDiamonds,kingDiamonds,aceClubs,twoClubs,threeClubs,fourClubs,fiveClubs,sixClubs,sevenClubs,eightClubs,nineClubs,tenClubs,jackClubs,queenClubs,kingClubs,aceHearts,twoHearts,threeHearts,fourHearts,fiveHearts,sixHearts,sevenHearts,eightHearts,nineHearts,tenHearts,jackHearts,queenHearts,kingHearts, firstJoker, secondJoker];
 
-        findHand();
+        findHand(isItInTheHand);
         
       }
-      function findHand() {
-        let length = isItInTheHand.length;
-        document.getElementById("text").innerHTML = length;
+      function findHand(isItInTheHand) {
+        const hand = [];
+        for (var i=0; i < 54; i++) {
+          if (isItInTheHand[i] == true) {
+            hand.push(true);
+          }
+        }
+        //let length = isItInTheHand.length;
+        document.getElementById("text").innerHTML = hand;
               }
 </script>
   </body>
