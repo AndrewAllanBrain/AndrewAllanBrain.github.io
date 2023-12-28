@@ -1,7 +1,0 @@
-<!DOCTYPE html>
-<title>BILL</title>
-<div>
-<?php
-echo "My first PHP script!";
-?>
-</div>
