@@ -63,7 +63,7 @@
     <input type="Checkbox" id="J1" onclick="lookAtTheHand()">JOKER</input>
     <input type="Checkbox" id="J2" onclick="lookAtTheHand()">JOKER</input>
     
-    <p id="text" style="display:block"></p>
+    <p id="text" style="display:block">bob</p>
 
 
     <script>
@@ -125,13 +125,12 @@
     
         const isItInTheHand= [aceSpades,twoSpades,threeSpades,fourSpades,fiveSpades,sixSpades,sevenSpades,eightSpades,nineSpades,tenSpades,jackSpades,queenSpades,kingSpades,aceDiamonds,twoDiamonds,threeDiamonds,fourDiamonds,fiveDiamonds,sixDiamonds,sevenDiamonds,eightDiamonds,nineDiamonds,tenDiamonds,jackDiamonds,queenDiamonds,kingDiamonds,aceClubs,twoClubs,threeClubs,fourClubs,fiveClubs,sixClubs,sevenClubs,eightClubs,nineClubs,tenClubs,jackClubs,queenClubs,kingClubs,aceHearts,twoHearts,threeHearts,fourHearts,fiveHearts,sixHearts,sevenHearts,eightHearts,nineHearts,tenHearts,jackHearts,queenHearts,kingHearts, firstJoker, secondJoker];
 
-        let hand = findHand(isItInTheHand);
+        findHand();
         
       }
-      function findImportance(isItInTheHand) {
-        let length = isItInTheHand.length
+      function findImportance() {
+        let length = isItInTheHand.length;
         document.getElementById("text").innerHTML = length;
-        return isItInTheHand;
               }
 </script>
   </body>
