@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html style="background-color: #46999a">
-  <title>ding</title>
+  <title>ding ding</title>
   <a href="AndrewAllanBrain.github.io">
     <button>
       <img src="End Page.png" height="10" width="10"></img>
@@ -133,14 +133,15 @@
         for (let x=0; x < 4; x++) {
           for (let i=(13*x); i < (13*(x+1)); i++) {
             if (isItInTheHand[i] == true) {
+              let suit = ""
               if (x == 0) {
-                let suit = "Spades";
+                suit = "Spades";
               } else if (x == 1) 
-              {let suit = "Diamonds";
+              {suit = "Diamonds";
               } else if (x == 2) {
-                let suit = "Clubs";
+                suit = "Clubs";
               } else {
-                let suit = "Hearts";}
+                suit = "Hearts";}
               let num = (i-(13*x))+2;
               //let name = str(num) + " of " + suit;
               hand.push(suit);
