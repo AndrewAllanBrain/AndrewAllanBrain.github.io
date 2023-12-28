@@ -130,17 +130,18 @@
         
       }
       function findHand(isItInTheHand) {
-        const hand = [];
-        const hand2 = []
+        var hand = {};
         for (let x=0; x < 4; x++) {
           for (let i=(13*x); i < (13*(x+1)); i++) {
-            hand.push(i)
-            hand2.push((i-(13*x))+2)
+            if (isItInTheHand[i] == true) {
+              if (x == 0) {let suit = "Spades"} else if (x == 1) {let suit = "Diamonds"} else if (x == 2) {let suit = "Clubs"} else {let suit = "Hearts"}
+              hand[str((i-(13*x))+2) + " of " + suit] = [((i-(13*x))+2), suit];
+            }
           }
         }
         //let length = isItInTheHand.length;
         document.getElementById("text").innerHTML = hand;
-        document.getElementById("text2").innerHTML = hand2;
+        //document.getElementById("text2").innerHTML = hand2;
               }
 </script>
   </body>
