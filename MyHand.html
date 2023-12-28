@@ -61,17 +61,18 @@
        <input type="Checkbox" id="KH" onclick="lookAtTheHand()">KING OF HEARTS</input>
        <input type="Checkbox" id="J1" onclick="lookAtTheHand()">JOKER</input>
        <input type="Checkbox" id="J2" onclick="lookAtTheHand()">JOKER</input>
-    <p id="4CP" style="display:none">You've selected the 4 of clubs</p>
-       <script>
-         function lookAtTheHand() {
-           var p = document.getElementById("4C");
-           var CP = = document.getElementById("4CP");
-           if (p.checked == true){
-            CP.style.display = "block";
-           } else {
-            CP.style.display = "none";
-              }
-         }
-       </script>
+       <p id="text" style="display:block">Checkbox isn't CHECKED!</p>
+
+<script>
+function lookAtTheHand() {
+  var checkBox = document.getElementById("4C");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "none";
+  } else {
+     text.style.display = "block";
+  }
+}
+</script>
   </body>
 </html>
