@@ -7,7 +7,6 @@
     </button>
   </a>
   <body>
-     <form action="default.js">
        <input type="Checkbox" name="AS">ACE OF SPADES</input>
        <input type="Checkbox" name="2S">2 OF SPADES</input>
        <input type="Checkbox" name="3S">3 OF SPADES</input>
@@ -62,7 +61,12 @@
        <input type="Checkbox" name="KH">KING OF HEARTS</input>
        <input type="Checkbox" name="J1">JOKER</input>
        <input type="Checkbox" name="J2">JOKER</input>
-       <input type="submit" name="Done?">
-     </form>
+    <p id="test"></p>
+       <script>
+         function display() {
+           var p = document.getElementById("4C").value;
+           document.getElementById("test").innerHTML = "Your answer is " + p;
+         }
+       </script>
   </body>
 </html>
