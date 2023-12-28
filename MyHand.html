@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html style="background-color: #46999a">
-  <title>MyHand</title>
+  <title>ding ding</title>
   <a href="AndrewAllanBrain.github.io">
     <button>
       <img src="End Page.png" height="10" width="10"></img>
@@ -130,8 +130,8 @@
       }
       function findHand(isItInTheHand) {
         const hand = [];
-        for (let i=0; i < 54; i++) {
-          if (isItInTheHand[i] == true) {
+        for (var key in isItInTheHand) {
+          if (key == true) {
             hand.push(true);
           }
         }
