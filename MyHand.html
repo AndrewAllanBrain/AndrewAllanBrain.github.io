@@ -64,6 +64,7 @@
     <input type="Checkbox" id="J2" onclick="lookAtTheHand()">JOKER</input>
     
     <p id="text" style="display:block"></p>
+    <p id="text2">test</p>
 
 
     <script>
@@ -130,13 +131,16 @@
       }
       function findHand(isItInTheHand) {
         const hand = [];
+        const hand2 = []
         for (let x=0; x < 4; x++) {
           for (let i=(13*x); i < (13*(x+1)); i++) {
             hand.push(i)
+            hand2.push((i-(13*x))+2)
           }
         }
         //let length = isItInTheHand.length;
         document.getElementById("text").innerHTML = hand;
+        document.getElementById("text2").innerHTML = hand2;
               }
 </script>
   </body>
