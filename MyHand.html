@@ -68,60 +68,60 @@
 
     <script>
       function lookAtTheHand() {
-        var aceSpades = document.getElementById("AS").checked;
-        var aceDiamonds = document.getElementById("AD").checked;
-        var aceClubs = document.getElementById("AC").checked;
-        var aceHearts = document.getElementById("AH").checked;
-        var twoSpades = document.getElementById("2S").checked;
-        var twoDiamonds = document.getElementById("2D").checked;
-        var twoClubs = document.getElementById("2C").checked;
-        var twoHearts = document.getElementById("2H").checked;
-        var threeSpades = document.getElementById("3S").checked;
-        var threeDiamonds = document.getElementById("3D").checked;
-        var threeClubs = document.getElementById("3C").checked;
-        var threeHearts = document.getElementById("3H").checked;
-        var fourSpades = document.getElementById("4S").checked;
-        var fourDiamonds = document.getElementById("4D").checked;
-        var fourClubs = document.getElementById("4C").checked;
-        var fourHearts = document.getElementById("4H").checked;
-        var fiveSpades = document.getElementById("5S").checked;
-        var fiveDiamonds = document.getElementById("5D").checked;
-        var fiveClubs = document.getElementById("5C").checked;
-        var fiveHearts = document.getElementById("5H").checked;
-        var sixSpades = document.getElementById("6S").checked;
-        var sixDiamonds = document.getElementById("6D").checked;
-        var sixClubs = document.getElementById("6C").checked;
-        var sixHearts = document.getElementById("6H").checked;
-        var sevenSpades = document.getElementById("7S").checked;
-        var sevenDiamonds = document.getElementById("7D").checked;
-        var sevenClubs = document.getElementById("7C").checked;
-        var sevenHearts = document.getElementById("7H").checked;
-        var eightSpades = document.getElementById("8S").checked;
-        var eightDiamonds = document.getElementById("8D").checked;
-        var eightClubs = document.getElementById("8C").checked;
-        var eightHearts = document.getElementById("8H").checked;
-        var nineSpades = document.getElementById("9S").checked;
-        var nineDiamonds = document.getElementById("9D").checked;
-        var nineClubs = document.getElementById("9C").checked;
-        var nineHearts = document.getElementById("9H").checked;
-        var tenSpades = document.getElementById("10S").checked;
-        var tenDiamonds = document.getElementById("10D").checked;
-        var tenClubs = document.getElementById("10C").checked;
-        var tenHearts = document.getElementById("10H").checked;
-        var jackSpades = document.getElementById("JS").checked;
-        var jackDiamonds = document.getElementById("JD").checked;
-        var jackClubs = document.getElementById("JC").checked;
-        var jackHearts = document.getElementById("JH").checked;
-        var queenSpades = document.getElementById("QS").checked;
-        var queenDiamonds = document.getElementById("QD").checked;
-        var queenClubs = document.getElementById("QC").checked;
-        var queenHearts = document.getElementById("QH").checked;
-        var kingSpades = document.getElementById("KS").checked;
-        var kingDiamonds = document.getElementById("KD").checked;
-        var kingClubs = document.getElementById("KC").checked;
-        var kingHearts = document.getElementById("KH").checked;
-        var firstJoker = document.getElementById("J1").checked;
-        var secondJoker = document.getElementById("J2").checked;
+        let aceSpades = document.getElementById("AS").checked;
+        let aceDiamonds = document.getElementById("AD").checked;
+        let aceClubs = document.getElementById("AC").checked;
+        let aceHearts = document.getElementById("AH").checked;
+        let twoSpades = document.getElementById("2S").checked;
+        let twoDiamonds = document.getElementById("2D").checked;
+        let twoClubs = document.getElementById("2C").checked;
+        let twoHearts = document.getElementById("2H").checked;
+        let threeSpades = document.getElementById("3S").checked;
+        let threeDiamonds = document.getElementById("3D").checked;
+        let threeClubs = document.getElementById("3C").checked;
+        let threeHearts = document.getElementById("3H").checked;
+        let fourSpades = document.getElementById("4S").checked;
+        let fourDiamonds = document.getElementById("4D").checked;
+        let fourClubs = document.getElementById("4C").checked;
+        let fourHearts = document.getElementById("4H").checked;
+        let fiveSpades = document.getElementById("5S").checked;
+        let fiveDiamonds = document.getElementById("5D").checked;
+        let fiveClubs = document.getElementById("5C").checked;
+        let fiveHearts = document.getElementById("5H").checked;
+        let sixSpades = document.getElementById("6S").checked;
+        let sixDiamonds = document.getElementById("6D").checked;
+        let sixClubs = document.getElementById("6C").checked;
+        let sixHearts = document.getElementById("6H").checked;
+        let sevenSpades = document.getElementById("7S").checked;
+        let sevenDiamonds = document.getElementById("7D").checked;
+        let sevenClubs = document.getElementById("7C").checked;
+        let sevenHearts = document.getElementById("7H").checked;
+        let eightSpades = document.getElementById("8S").checked;
+        let eightDiamonds = document.getElementById("8D").checked;
+        let eightClubs = document.getElementById("8C").checked;
+        let eightHearts = document.getElementById("8H").checked;
+        let nineSpades = document.getElementById("9S").checked;
+        let nineDiamonds = document.getElementById("9D").checked;
+        let nineClubs = document.getElementById("9C").checked;
+        let nineHearts = document.getElementById("9H").checked;
+        let tenSpades = document.getElementById("10S").checked;
+        let tenDiamonds = document.getElementById("10D").checked;
+        let tenClubs = document.getElementById("10C").checked;
+        let tenHearts = document.getElementById("10H").checked;
+        let jackSpades = document.getElementById("JS").checked;
+        let jackDiamonds = document.getElementById("JD").checked;
+        let jackClubs = document.getElementById("JC").checked;
+        let jackHearts = document.getElementById("JH").checked;
+        let queenSpades = document.getElementById("QS").checked;
+        let queenDiamonds = document.getElementById("QD").checked;
+        let queenClubs = document.getElementById("QC").checked;
+        let queenHearts = document.getElementById("QH").checked;
+        let kingSpades = document.getElementById("KS").checked;
+        let kingDiamonds = document.getElementById("KD").checked;
+        let kingClubs = document.getElementById("KC").checked;
+        let kingHearts = document.getElementById("KH").checked;
+        let firstJoker = document.getElementById("J1").checked;
+        let secondJoker = document.getElementById("J2").checked;
     
         const isItInTheHand= [aceSpades,twoSpades,threeSpades,fourSpades,fiveSpades,sixSpades,sevenSpades,eightSpades,nineSpades,tenSpades,jackSpades,queenSpades,kingSpades,aceDiamonds,twoDiamonds,threeDiamonds,fourDiamonds,fiveDiamonds,sixDiamonds,sevenDiamonds,eightDiamonds,nineDiamonds,tenDiamonds,jackDiamonds,queenDiamonds,kingDiamonds,aceClubs,twoClubs,threeClubs,fourClubs,fiveClubs,sixClubs,sevenClubs,eightClubs,nineClubs,tenClubs,jackClubs,queenClubs,kingClubs,aceHearts,twoHearts,threeHearts,fourHearts,fiveHearts,sixHearts,sevenHearts,eightHearts,nineHearts,tenHearts,jackHearts,queenHearts,kingHearts, firstJoker, secondJoker];
 
@@ -130,7 +130,7 @@
       }
       function findHand(isItInTheHand) {
         const hand = [];
-        for (var i=0; i < 54; i++) {
+        for (let i=0; i < 54; i++) {
           if (isItInTheHand[i] == true) {
             hand.push(true);
           }
