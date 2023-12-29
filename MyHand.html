@@ -6,29 +6,35 @@
       body {
       background: #46999a
       }
-      .container {
+      .close {
       position: relative;
       float: right;
       }
       .firstRow{
-        position:realtive
-        float:center
-        max-width: 80%
+        position:relative
+        border-style: solid
+        
+      }
+      .image{
+        max-width:10%;
+        max-height:10%;
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="close">
       <a href="AndrewAllanBrain.github.io">
         <button>
           <img src="End Page.png" height="10" width="10"></img>
         </button>
       </a>
     </div>
-      
+
+    <div class="firstRow">
+      <div class="image">
     <input type="Checkbox" id="AS" onclick="lookAtTheHand()" style="display: none"/>
     <label for="AS"> <img src="AS.png" alt="ACE OF SPADES" /> </label>
-
+      </div>
     <input type="Checkbox" id="2S" onclick="lookAtTheHand()" style="display: none"/>
     <label for="2S"> <img src="2S.png" alt="2 OF SPADES" /> </label>
 
@@ -64,6 +70,8 @@
 
     <input type="Checkbox" id="KS" onclick="lookAtTheHand()" style="display: none"/>
     <label for="KS"> <img src="KS.png" alt="KING OF SPADES" /> </label>
+      
+    </div>
 
     <input type="Checkbox" id="AD" onclick="lookAtTheHand()" style="display: none"/>
     <label for="AD"> <img src="AD.png" alt="ACE OF DIAMONDS" /> </label>
