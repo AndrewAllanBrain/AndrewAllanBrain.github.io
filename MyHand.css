@@ -2,10 +2,8 @@ body{
   background:#46999a
 }
 
-closePage {
-  float: right;
-}
-
-div #firstMiddle {
-  float: center;
+img {
+  max-width:10%;
+  max-height: 10%;
+  
 }
