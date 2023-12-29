@@ -3,7 +3,7 @@ body{
 }
 
 div.endPage{
-  position: relative;
+  position: absolute;
   right: 150px;
 }
 
