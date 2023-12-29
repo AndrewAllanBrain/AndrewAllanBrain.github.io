@@ -2,7 +2,7 @@ body{
   background:#46999a
 }
 
-.endPage{
+div.endPage{
   position: relative;
   right: 150px;
 }
