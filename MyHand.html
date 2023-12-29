@@ -14,13 +14,12 @@
         position:relative;
         border-style: solid;
         max-width:95%;
-        max-height:35%;
         
       }
       img{
         position: rleative;
         max-width:5%;
-        max-height:7%;
+        max-height:auto;
       }
     </style>
   </head>
@@ -35,6 +34,7 @@
     </div>
 
     <div class="row">
+      <div class="left">
     <input type="Checkbox" id="AS" onclick="lookAtTheHand()" style="display: none"/>
     <label for="AS"> <img src="AS.png" alt="ACE OF SPADES" /> </label>
       
@@ -43,6 +43,7 @@
 
     <input type="Checkbox" id="3S" onclick="lookAtTheHand()" style="display: none"/>
     <label for="3S"> <img src="3S.png" alt="3 OF SPADES" /> </label>
+        </div>
 
     <input type="Checkbox" id="4S" onclick="lookAtTheHand()" style="display: none"/>
     <label for="4S"> <img src="4S.png" alt="4 OF SPADES" /> </label>
