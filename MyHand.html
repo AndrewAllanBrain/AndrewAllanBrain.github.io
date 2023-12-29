@@ -10,15 +10,21 @@
         position: relative;
         float: right;
       }
-      #container{
+      #cards{
+        position:relative;
+        border-style:solid;
+        display:grid;
+      }
+      #row{
         position:relative;
         border-style: solid;
-        display:grid;
+        display:inline-block;
       }
     </style>
   </head>
   <body>
     <center>
+    <div id="cards">
     <div id="close">
       <a href="AndrewAllanBrain.github.io">
         <button>
@@ -26,7 +32,7 @@
         </button>
       </a>
     </div>
-      <div id="container">
+      <div id="row">
     <input type="Checkbox" id="AS" onclick="lookAtTheHand()" style="display: none"/>
     <label for="AS"> <img src="AS.png" alt="ACE OF SPADES" style="width:6%;height:100%;object-fit:contain;padding-right:10px;padding-left:10px;"/> </label>
       
