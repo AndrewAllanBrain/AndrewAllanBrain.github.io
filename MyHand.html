@@ -20,7 +20,7 @@
         margin-left: 30px;
         margin-right: 30px;
       }
-      #row{
+      .row{
         position:relative;
         border-style: solid;
         height:100%;
@@ -32,6 +32,9 @@
         margin-left:auto;
         margin-right:auto;
         border-style: solid;
+      }
+      .card{
+        width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;
       }
       
     </style>
@@ -47,12 +50,12 @@
     </div>
       <div id="container">
       <h1>test</h1>
-      <p id="text" style="display:block"></p>
+      <p id="text" style="display:block">test</p>
       </div>
        <div id="cards">
-      <div id="row">
+      <div class="row">
     <input type="Checkbox" id="AS" onclick="lookAtTheHand()" style="display: none"/>
-    <label for="AS"> <img src="AS.png" alt="ACE OF SPADES" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
+    <label for="AS"> <img src="AS.png" alt="ACE OF SPADES" class="card"/> </label>
       
     <input type="Checkbox" id="2S" onclick="lookAtTheHand()" style="display: none"/>
     <label for="2S"> <img src="2S.png" alt="2 OF SPADES" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
@@ -91,7 +94,7 @@
     <label for="KS"> <img src="KS.png" alt="KING OF SPADES" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
 
         </div>
-         <div id="row">
+         <div class="row">
     
     <input type="Checkbox" id="AD" onclick="lookAtTheHand()" style="display: none"/>
     <label for="AD"> <img src="AD.png" alt="ACE OF DIAMONDS" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
@@ -133,7 +136,7 @@
     <label for="KD"> <img src="KD.png" alt="KING OF DIAMONDS" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>  
 
          </div>
-         <div id="row">
+         <div class="row">
 
     <input type="Checkbox" id="AC" onclick="lookAtTheHand()" style="display: none"/>
     <label for="AC"> <img src="AC.png" alt="ACE OF CLUBS" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
@@ -175,7 +178,7 @@
     <label for="KC"> <img src="KC.png" alt="KING OF CLUBS" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
 
          </div>
-         <div id="row">
+         <div class="row">
         
     <input type="Checkbox" id="AH" onclick="lookAtTheHand()" style="display: none"/>
     <label for="AH"> <img src="AH.png" alt="ACE OF HEARTS" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
@@ -217,7 +220,7 @@
     <label for="KH"> <img src="KH.png" alt="KING OF HEARTS" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
 
            </div>
-         <div id="row">
+         <div class="row">
 
     <input type="Checkbox" id="J1" onclick="lookAtTheHand()" style="display: none"/>
     <label for="J1"> <img src="J1.png" alt="JOKER" style="width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;"/> </label>
