@@ -48,7 +48,7 @@
         padding:0;
         margin:0;
       }
-      .text{
+      #text{
         color: #E6E6E6;
         padding:0;
         margin:0;
@@ -66,7 +66,7 @@
     </div>
       <div class="container">
       <h1 class="header">You Have A Royal Flush</h1>
-      <p class="text">Select Some Cards</p
+      <p id="text">Select Some Cards</p
       </div>
       </div>
        <div class="cards">
@@ -331,7 +331,7 @@
           }
         }
         //let length = isItInTheHand.length;
-        document.getElementByClassName("text").innerHTML = hand;
+        document.getElementByID("text").innerHTML = hand;
         //document.getElementById("text2").innerHTML = hand2;        
       }
     </script>
