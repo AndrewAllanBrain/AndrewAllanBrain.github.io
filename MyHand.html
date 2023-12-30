@@ -1,282 +1,333 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>MyHand</title>
-      <style>
-         body {
-         background: #46999a;
-         }
-         .close {
-         position: relative;
-         float: right;
-         background: #AAAAAA;
-         }
-         .cards{
-         position:relative;
-         border-style:none;
-         display:grid;
-         height:65%;
-         width:90%;
-         margin-left: auto;
-         margin-right: auto;
-         }
-         .row{
-         position:relative;
-         border-style: none;
-         height:100%;
-         width:100%;
-         }
-         .container{
-         position:relative;
-         top:0px;
-         margin-left:auto;
-         margin-right:auto;
-         border-style: none;
-         width:50%;
-         background: #234D4D;
-         }
-         .card{
-         width:6%;
-         height:90%;
-         object-fit:contain;
-         padding-right:4px;
-         padding-left:4px;
-         display: inline-block;
-         padding-top:4px;
-         }
-         .header{
-         color: #E6E6E6;
-         padding:0;
-         margin:0;
-         border-style: solid;
-         }
-         #text{
-         color: #E6E6E6;
-         padding:0;
-         margin:0;
-         border-style: solid;
-         }
-      </style>
-   </head>
-   <body>
-      <center>
-         <a href="AndrewAllanBrain.github.io">
-         <div class="close">
-                <img src="End Page.png" height="10" width="10" alt="X"/>
+  <head>
+    <title>MyHand</title>
+    <style>
+      body {
+        background: #46999a
+      }
+      #close {
+        position: relative;
+        float: right;
+      }
+      #cards{
+        position:relative;
+        border-style:solid;
+        display:grid;
+        height:65%;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .row{
+        position:relative;
+        border-style: solid;
+        height:100%;
+        width:100%;
+      }
+      #container{
+        position:relative;
+        top:0px;
+        margin-left:auto;
+        margin-right:auto;
+        border-style: solid;
+        width:50%;
+        height:5%;
+      }
+      #title{
+        border-style: solid;
+        position: relative;
+        top:-20px;
+      }
+      #text{
+        border-style: solid;
+        position: relative;
+        top: -40px;
+      }
+      .card{
+        width:6%;height:90%;object-fit:contain;padding-right:5px;padding-left:5px;display: inline-block;padding-top:4px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <center>
+    <div id="close">
+      <a href="AndrewAllanBrain.github.io">
+        <button>
+          <img src="End Page.png" height="10" width="10"></img>
+        </button>
+      </a>
+    </div>
+      <div id="container">
+      <h1 id="title">You Have Nothing</h1>
+      <p id="text">test</p>
+      </div>
+       <div id="cards">
+      <div class="row">
+    <input type="Checkbox" id="AS" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="AS"> <img src="AS.png" alt="ACE OF SPADES" class="card"/> </label>
+      
+    <input type="Checkbox" id="2S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="2S"> <img src="2S.png" alt="2 OF SPADES" class="card"/> </label>
+
+    <input type="Checkbox" id="3S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="3S"> <img src="3S.png" alt="3 OF SPADES" class="card"/> </label>
+  
+    <input type="Checkbox" id="4S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="4S"> <img src="4S.png" alt="4 OF SPADES" class="card"/> </label>
+
+    <input type="Checkbox" id="5S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="5S"> <img src="5S.png" alt="5 OF SPADES" class="card"/> </label>
+
+    <input type="Checkbox" id="6S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="6S"> <img src="6S.png" alt="6 OF SPADES" class="card"/> </label>
+    
+    <input type="Checkbox" id="7S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="7S"> <img src="7S.png" alt="7 OF SPADES" class="card"/> </label>
+        
+    <input type="Checkbox" id="8S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="8S"> <img src="8S.png" alt="8 OF SPADES" class="card"/> </label>
+
+    <input type="Checkbox" id="9S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="9S"> <img src="9S.png" alt="9 OF SPADES" class="card"/> </label>
+
+    <input type="Checkbox" id="10S" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="10S"> <img src="10S.png" alt="10 OF SPADES" class="card"/> </label>
+  
+    <input type="Checkbox" id="JS" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="JS"> <img src="JS.png" alt="JACK OF SPADES" class="card"/> </label>
+
+    <input type="Checkbox" id="QS" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="QS"> <img src="QS.png" alt="QUEEN OF SPADES" class="card"/> </label>
+
+    <input type="Checkbox" id="KS" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="KS"> <img src="KS.png" alt="KING OF SPADES" class="card"/> </label>
+
+        </div>
+         <div class="row">
+    
+    <input type="Checkbox" id="AD" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="AD"> <img src="AD.png" alt="ACE OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="2D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="2D"> <img src="2D.png" alt="2 OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="3D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="3D"> <img src="3D.png" alt="3 OF DIAMONDS" class="card"/> </label>
+          
+    <input type="Checkbox" id="4D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="4D"> <img src="4D.png" alt="4 OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="5D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="5D"> <img src="5D.png" alt="5 OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="6D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="6D"> <img src="6D.png" alt="6 OF DIAMONDS" class="card"/> </label>
+              
+    <input type="Checkbox" id="7D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="7D"> <img src="7D.png" alt="7 OF DIAMONDS" class="card"/> </label>
+                  
+    <input type="Checkbox" id="8D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="8D"> <img src="8D.png" alt="8 OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="9D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="9D"> <img src="9D.png" alt="9 OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="10D" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="10D"> <img src="10D.png" alt="10 OF DIAMONDS" class="card"/> </label>
+                      
+    <input type="Checkbox" id="JD" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="JD"> <img src="JD.png" alt="JACK OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="QD" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="QD"> <img src="QD.png" alt="QUEEN OF DIAMONDS" class="card"/> </label>
+
+    <input type="Checkbox" id="KD" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="KD"> <img src="KD.png" alt="KING OF DIAMONDS" class="card"/> </label>  
+
          </div>
-         </a>
-         <div class="container">
-            <h1 class="header">You Have A Royal Flush</h1>
-            <p id="text">Select Some Cards</p>
+         <div class="row">
+
+    <input type="Checkbox" id="AC" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="AC"> <img src="AC.png" alt="ACE OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="2C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="2C"> <img src="2C.png" alt="2 OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="3C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="3C"> <img src="3C.png" alt="3 OF CLUBS" class="card"/> </label>
+  
+    <input type="Checkbox" id="4C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="4C"> <img src="4C.png" alt="4 OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="5C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="5C"> <img src="5C.png" alt="5 OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="6C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="6C"> <img src="6C.png" alt="6 OF CLUBS" class="card"/> </label>
+  
+    <input type="Checkbox" id="7C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="7C"> <img src="7C.png" alt="7 OF CLUBS" class="card"/> </label>
+  
+    <input type="Checkbox" id="8C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="8C"> <img src="8C.png" alt="8 OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="9C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="9C"> <img src="9C.png" alt="9 OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="10C" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="10C"> <img src="10C.png" alt="10 OF CLUBS" class="card"/> </label>
+    
+    <input type="Checkbox" id="JC" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="JC"> <img src="JC.png" alt="JACK OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="QC" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="QC"> <img src="QC.png" alt="QUEEN OF CLUBS" class="card"/> </label>
+
+    <input type="Checkbox" id="KC" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="KC"> <img src="KC.png" alt="KING OF CLUBS" class="card"/> </label>
+
          </div>
-         <div class="cards">
-            <div class="row">
-               <input type="Checkbox" id="AS" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="AS"> <img src="AS.png" alt="ACE OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="2S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="2S"> <img src="2S.png" alt="2 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="3S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="3S"> <img src="3S.png" alt="3 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="4S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="4S"> <img src="4S.png" alt="4 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="5S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="5S"> <img src="5S.png" alt="5 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="6S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="6S"> <img src="6S.png" alt="6 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="7S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="7S"> <img src="7S.png" alt="7 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="8S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="8S"> <img src="8S.png" alt="8 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="9S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="9S"> <img src="9S.png" alt="9 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="10S" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="10S"> <img src="10S.png" alt="10 OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="JS" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="JS"> <img src="JS.png" alt="JACK OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="QS" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="QS"> <img src="QS.png" alt="QUEEN OF SPADES" class="card"/> </label>
-               <input type="Checkbox" id="KS" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="KS"> <img src="KS.png" alt="KING OF SPADES" class="card"/> </label>
-            </div>
-            <div class="row">
-               <input type="Checkbox" id="AD" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="AD"> <img src="AD.png" alt="ACE OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="2D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="2D"> <img src="2D.png" alt="2 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="3D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="3D"> <img src="3D.png" alt="3 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="4D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="4D"> <img src="4D.png" alt="4 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="5D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="5D"> <img src="5D.png" alt="5 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="6D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="6D"> <img src="6D.png" alt="6 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="7D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="7D"> <img src="7D.png" alt="7 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="8D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="8D"> <img src="8D.png" alt="8 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="9D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="9D"> <img src="9D.png" alt="9 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="10D" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="10D"> <img src="10D.png" alt="10 OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="JD" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="JD"> <img src="JD.png" alt="JACK OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="QD" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="QD"> <img src="QD.png" alt="QUEEN OF DIAMONDS" class="card"/> </label>
-               <input type="Checkbox" id="KD" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="KD"> <img src="KD.png" alt="KING OF DIAMONDS" class="card"/> </label>  
-            </div>
-            <div class="row">
-               <input type="Checkbox" id="AC" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="AC"> <img src="AC.png" alt="ACE OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="2C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="2C"> <img src="2C.png" alt="2 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="3C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="3C"> <img src="3C.png" alt="3 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="4C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="4C"> <img src="4C.png" alt="4 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="5C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="5C"> <img src="5C.png" alt="5 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="6C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="6C"> <img src="6C.png" alt="6 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="7C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="7C"> <img src="7C.png" alt="7 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="8C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="8C"> <img src="8C.png" alt="8 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="9C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="9C"> <img src="9C.png" alt="9 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="10C" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="10C"> <img src="10C.png" alt="10 OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="JC" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="JC"> <img src="JC.png" alt="JACK OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="QC" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="QC"> <img src="QC.png" alt="QUEEN OF CLUBS" class="card"/> </label>
-               <input type="Checkbox" id="KC" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="KC"> <img src="KC.png" alt="KING OF CLUBS" class="card"/> </label>
-            </div>
-            <div class="row">
-               <input type="Checkbox" id="AH" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="AH"> <img src="AH.png" alt="ACE OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="2H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="2H"> <img src="2H.png" alt="2 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="3H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="3H"> <img src="3H.png" alt="3 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="4H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="4H"> <img src="4H.png" alt="4 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="5H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="5H"> <img src="5H.png" alt="5 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="6H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="6H"> <img src="6H.png" alt="6 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="7H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="7H"> <img src="7H.png" alt="7 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="8H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="8H"> <img src="8H.png" alt="8 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="9H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="9H"> <img src="9H.png" alt="9 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="10H" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="10H"> <img src="10H.png" alt="10 OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="JH" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="JH"> <img src="JH.png" alt="JACK OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="QH" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="QH"> <img src="QH.png" alt="QUEEN OF HEARTS" class="card"/> </label>
-               <input type="Checkbox" id="KH" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="KH"> <img src="KH.png" alt="KING OF HEARTS" class="card"/> </label>
-            </div>
-            <div class="row">
-               <input type="Checkbox" id="J1" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="J1"> <img src="J1.png" alt="JOKER" class="card"/> </label>
-               <input type="Checkbox" id="J2" onclick="lookAtTheHand()" style="display: none"/>
-               <label for="J2"> <img src="J2.png" alt="JOKER" class="card"/> </label>
-            </div>
+         <div class="row">
+        
+    <input type="Checkbox" id="AH" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="AH"> <img src="AH.png" alt="ACE OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="2H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="2H"> <img src="2H.png" alt="2 OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="3H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="3H"> <img src="3H.png" alt="3 OF HEARTS" class="card"/> </label>
+    
+    <input type="Checkbox" id="4H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="4H"> <img src="4H.png" alt="4 OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="5H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="5H"> <img src="5H.png" alt="5 OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="6H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="6H"> <img src="6H.png" alt="6 OF HEARTS" class="card"/> </label>
+        
+    <input type="Checkbox" id="7H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="7H"> <img src="7H.png" alt="7 OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="8H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="8H"> <img src="8H.png" alt="8 OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="9H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="9H"> <img src="9H.png" alt="9 OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="10H" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="10H"> <img src="10H.png" alt="10 OF HEARTS" class="card"/> </label>
+        
+    <input type="Checkbox" id="JH" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="JH"> <img src="JH.png" alt="JACK OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="QH" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="QH"> <img src="QH.png" alt="QUEEN OF HEARTS" class="card"/> </label>
+
+    <input type="Checkbox" id="KH" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="KH"> <img src="KH.png" alt="KING OF HEARTS" class="card"/> </label>
+
+           </div>
+         <div class="row">
+
+    <input type="Checkbox" id="J1" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="J1"> <img src="J1.png" alt="JOKER" class="card"/> </label>
+
+    <input type="Checkbox" id="J2" onclick="lookAtTheHand()" style="display: none"/>
+    <label for="J2"> <img src="J2.png" alt="JOKER" class="card"/> </label>
+    </div>
          </div>
-         <p id="text2">Select Some Cards</p>
-      </center>
-      <script>
-         function lookAtTheHand() {
-           let aceSpades = document.getElementById("AS").checked;
-           let aceDiamonds = document.getElementById("AD").checked;
-           let aceClubs = document.getElementById("AC").checked;
-           let aceHearts = document.getElementById("AH").checked;
-           let twoSpades = document.getElementById("2S").checked;
-           let twoDiamonds = document.getElementById("2D").checked;
-           let twoClubs = document.getElementById("2C").checked;
-           let twoHearts = document.getElementById("2H").checked;
-           let threeSpades = document.getElementById("3S").checked;
-           let threeDiamonds = document.getElementById("3D").checked;
-           let threeClubs = document.getElementById("3C").checked;
-           let threeHearts = document.getElementById("3H").checked;
-           let fourSpades = document.getElementById("4S").checked;
-           let fourDiamonds = document.getElementById("4D").checked;
-           let fourClubs = document.getElementById("4C").checked;
-           let fourHearts = document.getElementById("4H").checked;
-           let fiveSpades = document.getElementById("5S").checked;
-           let fiveDiamonds = document.getElementById("5D").checked;
-           let fiveClubs = document.getElementById("5C").checked;
-           let fiveHearts = document.getElementById("5H").checked;
-           let sixSpades = document.getElementById("6S").checked;
-           let sixDiamonds = document.getElementById("6D").checked;
-           let sixClubs = document.getElementById("6C").checked;
-           let sixHearts = document.getElementById("6H").checked;
-           let sevenSpades = document.getElementById("7S").checked;
-           let sevenDiamonds = document.getElementById("7D").checked;
-           let sevenClubs = document.getElementById("7C").checked;
-           let sevenHearts = document.getElementById("7H").checked;
-           let eightSpades = document.getElementById("8S").checked;
-           let eightDiamonds = document.getElementById("8D").checked;
-           let eightClubs = document.getElementById("8C").checked;
-           let eightHearts = document.getElementById("8H").checked;
-           let nineSpades = document.getElementById("9S").checked;
-           let nineDiamonds = document.getElementById("9D").checked;
-           let nineClubs = document.getElementById("9C").checked;
-           let nineHearts = document.getElementById("9H").checked;
-           let tenSpades = document.getElementById("10S").checked;
-           let tenDiamonds = document.getElementById("10D").checked;
-           let tenClubs = document.getElementById("10C").checked;
-           let tenHearts = document.getElementById("10H").checked;
-           let jackSpades = document.getElementById("JS").checked;
-           let jackDiamonds = document.getElementById("JD").checked;
-           let jackClubs = document.getElementById("JC").checked;
-           let jackHearts = document.getElementById("JH").checked;
-           let queenSpades = document.getElementById("QS").checked;
-           let queenDiamonds = document.getElementById("QD").checked;
-           let queenClubs = document.getElementById("QC").checked;
-           let queenHearts = document.getElementById("QH").checked;
-           let kingSpades = document.getElementById("KS").checked;
-           let kingDiamonds = document.getElementById("KD").checked;
-           let kingClubs = document.getElementById("KC").checked;
-           let kingHearts = document.getElementById("KH").checked;
-           let firstJoker = document.getElementById("J1").checked;
-           let secondJoker = document.getElementById("J2").checked;
-         
-           const isItInTheHand= [twoSpades,threeSpades,fourSpades,fiveSpades,sixSpades,sevenSpades,eightSpades,nineSpades,tenSpades,jackSpades,queenSpades,kingSpades,aceSpades,twoDiamonds,threeDiamonds,fourDiamonds,fiveDiamonds,sixDiamonds,sevenDiamonds,eightDiamonds,nineDiamonds,tenDiamonds,jackDiamonds,queenDiamonds,kingDiamonds,aceDiamonds,twoClubs,threeClubs,fourClubs,fiveClubs,sixClubs,sevenClubs,eightClubs,nineClubs,tenClubs,jackClubs,queenClubs,kingClubs,aceClubs,twoHearts,threeHearts,fourHearts,fiveHearts,sixHearts,sevenHearts,eightHearts,nineHearts,tenHearts,jackHearts,queenHearts,kingHearts,aceHearts,firstJoker,secondJoker];
-         
-           findHand(isItInTheHand);
-           
-         }
-         function findHand(isItInTheHand) {
-           var hand = [];
-           for (let x=0; x < 4; x++) {
-             for (let i=(13*x); i < (13*(x+1)); i++) {
-               if (isItInTheHand[i] == true) {
-                 let suit = ""
-                 if (x == 0) {
-                   suit = "Spades";
-                 } else if (x == 1) 
-                 {suit = "Diamonds";
-                 } else if (x == 2) {
-                   suit = "Clubs";
-                 } else {
-                   suit = "Hearts";}
-                 let num = (i-(13*x))+2;
-                 const details = [num, suit];
-                 hand.push(details);
-               }
-             }
-           }
-           //let length = isItInTheHand.length;
-           document.getElementByID("text2").innerHTML = hand;
-           //document.getElementById("text2").innerHTML = hand2;        
-         }
-      </script>
-   </body>
+
+    </center>
+    <script>
+      function lookAtTheHand() {
+        let aceSpades = document.getElementById("AS").checked;
+        let aceDiamonds = document.getElementById("AD").checked;
+        let aceClubs = document.getElementById("AC").checked;
+        let aceHearts = document.getElementById("AH").checked;
+        let twoSpades = document.getElementById("2S").checked;
+        let twoDiamonds = document.getElementById("2D").checked;
+        let twoClubs = document.getElementById("2C").checked;
+        let twoHearts = document.getElementById("2H").checked;
+        let threeSpades = document.getElementById("3S").checked;
+        let threeDiamonds = document.getElementById("3D").checked;
+        let threeClubs = document.getElementById("3C").checked;
+        let threeHearts = document.getElementById("3H").checked;
+        let fourSpades = document.getElementById("4S").checked;
+        let fourDiamonds = document.getElementById("4D").checked;
+        let fourClubs = document.getElementById("4C").checked;
+        let fourHearts = document.getElementById("4H").checked;
+        let fiveSpades = document.getElementById("5S").checked;
+        let fiveDiamonds = document.getElementById("5D").checked;
+        let fiveClubs = document.getElementById("5C").checked;
+        let fiveHearts = document.getElementById("5H").checked;
+        let sixSpades = document.getElementById("6S").checked;
+        let sixDiamonds = document.getElementById("6D").checked;
+        let sixClubs = document.getElementById("6C").checked;
+        let sixHearts = document.getElementById("6H").checked;
+        let sevenSpades = document.getElementById("7S").checked;
+        let sevenDiamonds = document.getElementById("7D").checked;
+        let sevenClubs = document.getElementById("7C").checked;
+        let sevenHearts = document.getElementById("7H").checked;
+        let eightSpades = document.getElementById("8S").checked;
+        let eightDiamonds = document.getElementById("8D").checked;
+        let eightClubs = document.getElementById("8C").checked;
+        let eightHearts = document.getElementById("8H").checked;
+        let nineSpades = document.getElementById("9S").checked;
+        let nineDiamonds = document.getElementById("9D").checked;
+        let nineClubs = document.getElementById("9C").checked;
+        let nineHearts = document.getElementById("9H").checked;
+        let tenSpades = document.getElementById("10S").checked;
+        let tenDiamonds = document.getElementById("10D").checked;
+        let tenClubs = document.getElementById("10C").checked;
+        let tenHearts = document.getElementById("10H").checked;
+        let jackSpades = document.getElementById("JS").checked;
+        let jackDiamonds = document.getElementById("JD").checked;
+        let jackClubs = document.getElementById("JC").checked;
+        let jackHearts = document.getElementById("JH").checked;
+        let queenSpades = document.getElementById("QS").checked;
+        let queenDiamonds = document.getElementById("QD").checked;
+        let queenClubs = document.getElementById("QC").checked;
+        let queenHearts = document.getElementById("QH").checked;
+        let kingSpades = document.getElementById("KS").checked;
+        let kingDiamonds = document.getElementById("KD").checked;
+        let kingClubs = document.getElementById("KC").checked;
+        let kingHearts = document.getElementById("KH").checked;
+        let firstJoker = document.getElementById("J1").checked;
+        let secondJoker = document.getElementById("J2").checked;
+    
+        const isItInTheHand= [twoSpades,threeSpades,fourSpades,fiveSpades,sixSpades,sevenSpades,eightSpades,nineSpades,tenSpades,jackSpades,queenSpades,kingSpades,aceSpades,twoDiamonds,threeDiamonds,fourDiamonds,fiveDiamonds,sixDiamonds,sevenDiamonds,eightDiamonds,nineDiamonds,tenDiamonds,jackDiamonds,queenDiamonds,kingDiamonds,aceDiamonds,twoClubs,threeClubs,fourClubs,fiveClubs,sixClubs,sevenClubs,eightClubs,nineClubs,tenClubs,jackClubs,queenClubs,kingClubs,aceClubs,twoHearts,threeHearts,fourHearts,fiveHearts,sixHearts,sevenHearts,eightHearts,nineHearts,tenHearts,jackHearts,queenHearts,kingHearts,aceHearts,firstJoker,secondJoker];
+
+        findHand(isItInTheHand);
+        
+      }
+      function findHand(isItInTheHand) {
+        var hand = [];
+        for (let x=0; x < 4; x++) {
+          for (let i=(13*x); i < (13*(x+1)); i++) {
+            if (isItInTheHand[i] == true) {
+              let suit = ""
+              if (x == 0) {
+                suit = "Spades";
+              } else if (x == 1) 
+              {suit = "Diamonds";
+              } else if (x == 2) {
+                suit = "Clubs";
+              } else {
+                suit = "Hearts";}
+              let num = (i-(13*x))+2;
+              const details = [num, suit];
+              hand.push(details);
+            }
+          }
+        }
+        //let length = isItInTheHand.length;
+        document.getElementById("text").innerHTML = hand;
+        //document.getElementById("text2").innerHTML = hand2;        
+      }
+    </script>
+  </body>
 </html>
