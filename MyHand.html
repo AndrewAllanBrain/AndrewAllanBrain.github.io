@@ -46,7 +46,7 @@
          font-family: Helvetica;
          font-size:1.875em;
          }
-         #text{
+         .text{
          color: #E6E6E6;
          border-style: none;
          position: relative;
@@ -65,6 +65,13 @@
          display: inline-block;
          padding-top:4px;
          }
+         markHC{
+         background-color: yellow;
+         }
+         markOP{
+         background-color: yellow;   
+         }
+         
       </style>
    </head>
    <body>
@@ -78,7 +85,8 @@
          </div>
          <div id="container">
             <h1 id="title">You Have A Royal Flush</h1>
-            <p id="text">Select Some Cards</p>
+            <p id="test" class="text">Select Some Cards</p>
+            <p id="classifier" class="text"><markHC>High Card</markHC>   <markOP>One Pair</markOP>   Two Pair   Three of a Kind   Straight   Flush   Full House   Four of a Kind   Straight Flush   Royal Flush</p>
          </div>
          <div id="cards">
             <div class="row">
@@ -284,7 +292,7 @@
              }
            }
            //let length = isItInTheHand.length;
-           document.getElementById("text").innerHTML = hand;
+           document.getElementById("test").innerHTML = hand;
            //document.getElementById("text2").innerHTML = hand2;        
          }
       </script>
