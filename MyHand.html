@@ -117,7 +117,7 @@
             </a>
          </div>
          <div id="container">
-            <h1 id="title">You Have A Royal Flush</h1>
+            <h1 id="title">You Have A Straight Flush</h1>
             <p id="test" class="text">Select Some Cards</p>
             <p id="classifier" class="text"><markHC>High Card</markHC> - <markOP>One Pair</markOP> - <markTP>Two Pair</markTP> - <markTK>Three of a Kind</markTK> - <markS>Straight</markS> - <markF>Flush</markF> - <markFH>Full House</markFH> - <markFK>Four of a Kind</markFK> - <markSF>Straight Flush</markSF> - <markRF>Royal Flush</markRF></p>
          </div>
@@ -301,7 +301,9 @@
          
            const isItInTheHand= [twoSpades,threeSpades,fourSpades,fiveSpades,sixSpades,sevenSpades,eightSpades,nineSpades,tenSpades,jackSpades,queenSpades,kingSpades,aceSpades,twoDiamonds,threeDiamonds,fourDiamonds,fiveDiamonds,sixDiamonds,sevenDiamonds,eightDiamonds,nineDiamonds,tenDiamonds,jackDiamonds,queenDiamonds,kingDiamonds,aceDiamonds,twoClubs,threeClubs,fourClubs,fiveClubs,sixClubs,sevenClubs,eightClubs,nineClubs,tenClubs,jackClubs,queenClubs,kingClubs,aceClubs,twoHearts,threeHearts,fourHearts,fiveHearts,sixHearts,sevenHearts,eightHearts,nineHearts,tenHearts,jackHearts,queenHearts,kingHearts,aceHearts,firstJoker,secondJoker];
          
-           findHand(isItInTheHand);
+           let hand = findHand(isItInTheHand);
+           let message = getMessage(hand); 
+           updatePage(message);
            
          }
          function findHand(isItInTheHand) {
@@ -330,6 +332,7 @@
             }
          }
          document.getElementById("test").innerHTML = hand;        
+         return hand
          }
       </script>
    </body>
