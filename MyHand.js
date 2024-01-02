@@ -89,5 +89,5 @@ function findHand(isItInTheHand) {
         }
     }
     document.getElementById("test").innerHTML = hand;
-    return hand
+    return hand;
 }
