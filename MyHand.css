@@ -1,107 +1,107 @@
-         body {
-         background: #46999a;
-            font-size:100%;
-         }
-         #close {
-         position: relative;
-         float: right;
-         }
-         #cards{
-         position:relative;
-         border-style:none;
-         display:grid;
-         height:100%;
-         width:90%;
-         margin-left: auto;
-         margin-right: auto;
-         }
-         .row{
-         position:relative;
-         border-style: none;
-         height:100%;
-         width:100%;
-         }
-         #container{
-         position:relative;
-         top:0px;
-         margin-left:auto;
-         margin-right:auto;
-         border-style: none;
-         width:80%;
-         background: #234D4D;
-         border-radius: 15px;
-         }
-         #title{
-         color: #E6E6E6;
-         border-style: none;
-         position: relative;
-         padding:0;
-         margin:0;
-         width:85%;
-         font-family: Helvetica;
-         font-size:1.875em;
-         }
-         .text{
-         color: #E6E6E6;
-         border-style: none;
-         position: relative;
-         padding:0;
-         margin:0;
-         width:100%;
-         font-family: Helvetica;
-         font-size:0.875em;
-         overflow-wrap: auto;
-         }
-         .card{
-         width:6%;
-         height:90%;
-         object-fit:contain;
-         padding-right:5px;
-         padding-left:5px;
-         display: inline-block;
-         padding-top:4px;
-         }
-         markHC{
-         background-color: yellow;
-         color:black;
-         }
-         markOP{
-         background-color: yellow;   
-         color:black;
-         }
-         markTP{
-         background-color: yellow;
-         color:black;
-         }
-         markTK{
-         background-color: yellow;   
-         color:black;
-         }
-         markS{
-         background-color: yellow;   
-         color:black;
-         }
-         markF{
-         background-color: yellow;
-         color:black;
-         }
-         markFH{
-         background-color: yellow;   
-         color:black;
-         }
-         markFK{
-         background-color: yellow;
-         color:black;
-         }
-         markSF{
-         background-color: yellow;   
-         color:black;
-         }
-         markRF{
-         background-color: yellow;   
-         color:black;
-         }
-         markFK{
-         background-color: yellow;   
-         color:black;
-         }
+body{
+background:#46999a;
+font-size:100%;
+}
+#close{
+position:relative;
+float:right;
+}
+#cards{
+position:relative;
+border-style:none;
+display:grid;
+height:100%;
+width:90%;
+margin-left:auto;
+margin-right:auto;
+}
+.row{
+position:relative;
+border-style:none;
+height:100%;
+width:100%;
+}
+#container{
+position:relative;
+top:0px;
+margin-left:auto;
+margin-right:auto;
+border-style:none;
+width:80%;
+background:#234D4D;
+border-radius:15px;
+}
+#title{
+color:#E6E6E6;
+border-style:none;
+position:relative;
+padding:0;
+margin:0;
+width:85%;
+font-family:Helvetica;
+font-size:1.875em;
+}
+.text{
+color:#E6E6E6;
+border-style:none;
+position:relative;
+padding:0;
+margin:0;
+width:100%;
+font-family:Helvetica;
+font-size:0.875em;
+overflow-wrap:auto;
+}
+.card{
+width:6%;
+height:90%;
+object-fit:contain;
+padding-right:5px;
+padding-left:5px;
+display:inline-block;
+padding-top:4px;
+}
+markHC{
+background-color:yellow;
+color:black;
+}
+markOP{
+background-color:yellow;
+color:black;
+}
+markTP{
+background-color:yellow;
+color:black;
+}
+markTK{
+background-color:yellow;
+color:black;
+}
+markS{
+background-color:yellow;
+color:black;
+}
+markF{
+background-color:yellow;
+color:black;
+}
+markFH{
+background-color:yellow;
+color:black;
+}
+markFK{
+background-color:yellow;
+color:black;
+}
+markSF{
+background-color:yellow;
+color:black;
+}
+markRF{
+background-color:yellow;
+color:black;
+}
+markFK{
+background-color:yellow;
+color:black;
+}
