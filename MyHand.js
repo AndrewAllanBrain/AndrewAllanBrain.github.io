@@ -85,7 +85,8 @@ function findHand(isItInTheHand) {
     }
     for (let y = 53; y < 55; y++) {
         if (isItInTheHand[y] == true) {
-            hand.push([100, "Joker"]);
+            const details = [100, "Joker"];
+            hand.push(details);
         }
     }
     document.getElementById("test").innerHTML = hand;
