@@ -56,7 +56,7 @@ function lookAtTheHand() {
 
     const isItInTheHand = [twoSpades, threeSpades, fourSpades, fiveSpades, sixSpades, sevenSpades, eightSpades, nineSpades, tenSpades, jackSpades, queenSpades, kingSpades, aceSpades, twoDiamonds, threeDiamonds, fourDiamonds, fiveDiamonds, sixDiamonds, sevenDiamonds, eightDiamonds, nineDiamonds, tenDiamonds, jackDiamonds, queenDiamonds, kingDiamonds, aceDiamonds, twoClubs, threeClubs, fourClubs, fiveClubs, sixClubs, sevenClubs, eightClubs, nineClubs, tenClubs, jackClubs, queenClubs, kingClubs, aceClubs, twoHearts, threeHearts, fourHearts, fiveHearts, sixHearts, sevenHearts, eightHearts, nineHearts, tenHearts, jackHearts, queenHearts, kingHearts, aceHearts, firstJoker, secondJoker];
 
-    let hand = findHand(isItInTheHand);
+    findHand(isItInTheHand);
     //let message = getMessage(hand); 
     //updateMessage(message);
 
@@ -89,5 +89,4 @@ function findHand(isItInTheHand) {
         }
     }
     document.getElementById("test").innerHTML = hand;
-    return hand;
 }
